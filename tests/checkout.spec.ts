@@ -2,8 +2,8 @@ import { expect, test } from '@playwright/test';
 
 test('User can complete a purchase', async ({ page }) => {
   await page.goto('/');
-  await page.fill('[data-test="username"]', 'standard_user');
-  await page.fill('[data-test="password"]', 'manasse_pasword');
+  await page.fill('[data-test="username"]', 'manasse10s@gmail.com');
+  await page.fill('[data-test="password"]', 'manasse_password');
   await page.click('[data-test="login-button"]');
   await page.click('[data-test="add-to-cart-sauce-labs-backpack"]');
   await page.click('[data-test="shopping-cart-link"]');
